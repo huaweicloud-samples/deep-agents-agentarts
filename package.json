@@ -1,0 +1,26 @@
+{
+  "name": "deepagent",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "mkdir -p logs && concurrently -p \"[{time}] [{name}]\" -t \"yyyy-MM-dd HH:mm:ss\" -n \"agent,runtime,frontend\" -c \"blue.bold,magenta.bold,green.bold\" \"npm run dev:agent\" \"npm run dev:runtime\" \"npm run dev:frontend\" 2>&1 | tee -a logs/dev.log",
+    "dev:backend": "mkdir -p logs && concurrently -p \"[{time}] [{name}]\" -t \"yyyy-MM-dd HH:mm:ss\" -n \"agent,runtime\" -c \"blue.bold,magenta.bold\" \"npm run dev:agent\" \"npm run dev:runtime\" 2>&1 | tee -a logs/backend.log",
+    "dev:proxy": "node src/proxy.mjs",
+    "dev:agent": "PYTHONUNBUFFERED=1 uv run main.py",
+    "dev:runtime": "node --watch src/server.mjs",
+    "dev:frontend": "concurrently \"node src/proxy.mjs\" \"npm --prefix frontend run dev\"",
+    "clean:logs": "rm -rf logs/*.log"
+  },
+  "dependencies": {
+    "@ag-ui/client": "^1.0.2",
+    "@copilotkit/runtime": "^1.73.3",
+    "@hashbrownai/core": "^0.8.3",
+    "agent-browser": "^0.43.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}

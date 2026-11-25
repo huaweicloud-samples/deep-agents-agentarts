@@ -1,0 +1,23 @@
+# ========================================================
+# Frontend (Vue 3 + Vite) Git Ignore
+# ========================================================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Env
+.env
+.env.*
+!.env.example

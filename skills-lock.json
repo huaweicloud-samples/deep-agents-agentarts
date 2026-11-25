@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "skills": {
+    "channels-setup": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/channels-setup/SKILL.md",
+      "computedHash": "096f475834f2b21974fdd477e2c3407cf5410debc881360153ec293671ea7d02"
+    },
+    "copilotkit": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/copilotkit/SKILL.md",
+      "computedHash": "e2ae8eadfa8a42cecce8e84b04b7dc7d4cbce413d71588ebce2a0c657de8a2b0"
+    },
+    "copilotkit-channels": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/copilotkit-channels/SKILL.md",
+      "computedHash": "f32ad78afc95858d3997a6cb3a5a907ca3ff85877be6aff65f76233bb39fce28"
+    },
+    "copilotkit-cli": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/copilotkit-cli/SKILL.md",
+      "computedHash": "5d00d008b502eb832ecc7dfe2da4891f1e5ea8b2aaeb9f8753e44dffa9b7eba0"
+    },
+    "inspector-docs": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/inspector-docs/SKILL.md",
+      "computedHash": "9cb099f90c1071e7d98e5f8ca0d5ca7c61283b334fca77be527e5eda4f229d55"
+    },
+    "inspector-workbench": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/inspector-workbench/SKILL.md",
+      "computedHash": "5507a112238141b664290171da99ba9afdc130ef2c0672a76775c8e363b997d8"
+    },
+    "intelligence-docs": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/intelligence-docs/SKILL.md",
+      "computedHash": "dd543047aa80396120e5b854a82dad60f5edeb81562c200e317573d2035234eb"
+    },
+    "intelligence-vocabulary": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/intelligence-vocabulary/SKILL.md",
+      "computedHash": "63a0da712bc0d9a1fa987188e6137b846c06bd5fbf0cb24825932b520e9397b7"
+    },
+    "setup-slack-channel": {
+      "source": "CopilotKit/CopilotKit",
+      "sourceType": "github",
+      "skillPath": "skills/setup-slack-channel/SKILL.md",
+      "computedHash": "caa044987fc31652735acf26d7206257e63469db5fefdf8ce534c2ee6e9bece1"
+    }
+  }
+}

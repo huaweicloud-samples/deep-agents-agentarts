@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    {
+      "name": "agentarts",
+      "command": "uv",
+      "args": ["run", "--no-sync", "python", "-m", "app.browser.plugin"],
+      "capabilities": ["browser.provider"]
+    }
+  ]
+}

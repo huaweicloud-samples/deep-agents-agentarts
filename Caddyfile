@@ -1,0 +1,25 @@
+{
+	auto_https off
+	admin off
+}
+
+:{$PORT:8000} {
+	log {
+		output stdout
+		format console
+	}
+
+	# 1. CopilotKit UI streaming endpoint (Node.js runtime on 4000)
+	handle {$API_PREFIX:/api}/copilotkit* {
+		reverse_proxy 127.0.0.1:4000 {
+			flush_interval -1
+		}
+	}
+
+	# 2. All FastAPI backend endpoints, uploads, threads, health checks, and LangGraph API (FastAPI on 8123)
+	handle {
+		reverse_proxy 127.0.0.1:8123 {
+			flush_interval -1
+		}
+	}
+}
